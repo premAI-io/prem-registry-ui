@@ -215,4 +215,95 @@ body {
   .modal-body__list-name li {
     font-size: 14px;
   }
+  .service-detail h3 {
+    font-size: 16px;
+  }
+}
+
+.loader {
+  border: 8px solid #F58E8E;
+  border-radius: 50%;
+  border-top: 8px solid rgba(237, 237, 237, 0.2);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.markdown-body {
+  background: transparent !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.service-detail {
+  display: flex;
+  gap: 24px;
+}
+@media (max-width: 1023px) {
+  .service-detail {
+    flex-wrap: wrap;
+  }
+  .service-detail .card {
+    width: 100%;
+  }
+}
+
+.service-detail .card {
+  border-radius: 6px;
+  box-shadow: 0px 4.498641014099121px 26.991846084594727px -1.1246602535247803px
+    rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    131.09deg,
+    rgba(47, 47, 47, 0.4) 8.8%,
+    rgba(103, 100, 98, 0.11) 88.99%
+  );
+}
+
+.right-general-card {
+  margin-bottom: 0.75rem;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.right-general-card span {
+  word-wrap: break-word;
+  min-width: 45%;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #ededed;
+  font-family: "ProximaNova";
+}
+@media (min-width: 768px) {
+  .right-general-card span {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.service-banner {
+  border-radius: 6px;
+  background: rgba(160, 123, 90, 0.80);
+  box-shadow: 0px 4px 26px -1px rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(22px);
 }
